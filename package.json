@@ -1,0 +1,21 @@
+{
+  "name": "jspm-hot-reloader-multiple",
+  "version": "0.0.1",
+  "description": "JSPM hot reloader multiple sites example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivier Ligot <olivier.ligot@groups.be>",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar-socket-emitter": "0.3.0",
+    "cors": "2.7.1",
+    "errorhandler": "1.4.2",
+    "express": "4.13.3",
+    "morgan": "1.6.1"
+  },
+  "devDependencies": {
+    "jspm": "0.16.14"
+  }
+}
