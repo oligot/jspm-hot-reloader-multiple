@@ -10,19 +10,6 @@
     <div id="app"></div>
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
-    <script>
-        var readyForMainLoad;
-        if (location.origin.match(/localhost/)) {
-          System.trace = true;
-          readyForMainLoad = System.import('jspm-hot-reloader').then(function(HotReloader) {
-            hr = new HotReloader.default('http://localhost:3000')  // chokidar-socket-emitter port
-          });
-        }
-        Promise.resolve(readyForMainLoad).then(() => {
-          System.import('app').then(function () {
-              console.log('ran at ', new Date());
-          })
-        })
-    </script>
+    <script src="../hot-reload.js"></script>
   </body>
 </html>
